@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <circle cx="50" cy="68" r="42" fill="#ffffff" fill-opacity="0.92" stroke="#0f172a" stroke-width="2.5"/>
+  <circle cx="50" cy="68" r="36" fill="none" stroke="#94a3b8" stroke-width="1" stroke-dasharray="3,3"/>
+  <polygon points="50,18 65,86 50,73" fill="#0b4f9f" stroke="#0f172a" stroke-width="1.5"/>
+  <polygon points="50,18 35,86 50,73" fill="#e2e8f0" stroke="#0f172a" stroke-width="1.5"/>
+  <text x="50" y="14" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a" text-anchor="middle">K</text>
+</svg>
