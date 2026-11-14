@@ -712,9 +712,9 @@
     z-index: 900;
   }
   body.zoom-low .photo-marker-wrap {
-    width: 32px;
-    height: 32px;
-    border-width: 2.5px;
+    width: 30px;
+    height: 30px;
+    border-width: 2.2px;
   }
   body.zoom-low .photo-marker-code {
     font-size: 8px;
@@ -744,20 +744,44 @@
     white-space: nowrap;
   }
 
-  /* Dynamic Active Map Legend */
+  /* Dynamic Active Map Legend (Positioned at bottom-right directly covering attribution text) */
   #active-legend {
     position: absolute;
-    left: 14px;
-    bottom: 18px;
-    z-index: 1050;
+    right: 6px;
+    bottom: 5px;
+    left: auto;
+    z-index: 1060;
     background: var(--bg-panel);
     border: 1px solid var(--border-col);
     border-radius: 10px;
     box-shadow: var(--shadow-lg);
-    min-width: 205px;
-    max-width: 265px;
+    min-width: 238px;
+    max-width: 274px;
     font-size: 11px;
     overflow: hidden;
+  }
+  .leaflet-bottom.leaflet-right {
+    right: 8px !important;
+    bottom: 6px !important;
+    z-index: 400 !important;
+    max-width: 215px !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+  }
+  .leaflet-control-attribution {
+    margin: 0 !important;
+    padding: 1px 4px !important;
+    font-size: 8.5px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    max-width: 215px !important;
+  }
+  .leaflet-bottom.leaflet-left {
+    left: 12px !important;
+    bottom: 10px !important;
+  }
+  .leaflet-control-scale {
+    margin: 0 !important;
   }
   .legend-head {
     padding: 6px 10px;
@@ -1158,9 +1182,11 @@
       transform: translateY(0);
     }
     #active-legend {
-      left: 10px;
-      bottom: 12px;
-      max-width: 215px;
+      right: 6px;
+      bottom: 5px;
+      left: auto;
+      min-width: 204px;
+      max-width: 222px;
     }
   }
 </style>
@@ -1179,7 +1205,7 @@
     <div class="splash-uni">DOKUZ EYLÜL ÜNİVERSİTESİ · BUCA EĞİTİM FAKÜLTESİ</div>
     <div class="splash-badge" id="sp-badge">ULUSAL COĞRAFYA EĞİTİMİ KONGRESİ · EYLÜL 2027 · İZMİR</div>
     <h1 class="splash-title" id="sp-title">İzmir İnteraktif Arazi Çalışması ve Gezi Haritası</h1>
-    <p class="splash-sub" id="sp-sub">Yüksek çözünürlüklü uydu altlığı üzerinde 6 tematik arazi koridoru, 32 doğrulanmış saha durağı ve Türkçe–İngilizce sesli saha rehberi.</p>
+    <p class="splash-sub" id="sp-sub">Sokak ve ulaşım haritası altlığı üzerinde 6 tematik arazi koridoru, 32 doğrulanmış saha durağı ve Türkçe–İngilizce sesli saha rehberi.</p>
     <div class="splash-controls">
       <button class="splash-lang-btn active" id="sp-lang-tr" onclick="setLanguage('tr')">Türkçe</button>
       <button class="splash-lang-btn" id="sp-lang-en" onclick="setLanguage('en')">English</button>
@@ -1220,8 +1246,8 @@
     </div>
 
     <div class="sb-docs-bar">
-      <a class="doc-chip" href="UCEK2027_Izmir_Gezi_Rehberi_Brosur.pdf" target="_blank" id="lnk-brochure">A5 Gezi Broşürü (PDF)</a>
-      <a class="doc-chip" href="Izmir_Turizm_Sahalari_ve_Arazi_Calismalari_Makale.pdf" target="_blank" id="lnk-article">Bilimsel Makale (PDF)</a>
+      <a class="doc-chip" href="UCEK2027_Izmir_Gezi_Rehberi_Brosur.pdf" data-file="UCEK2027_Izmir_Gezi_Rehberi_Brosur.pdf" target="_blank" id="lnk-brochure">A5 Gezi Broşürü (PDF)</a>
+      <a class="doc-chip" href="UCEK2027_Izmir_Bilimsel_Saha_Envanteri.pdf" data-file="UCEK2027_Izmir_Bilimsel_Saha_Envanteri.pdf" target="_blank" id="lnk-article">Bilimsel Saha Envanteri (PDF)</a>
     </div>
 
     <div class="sb-tabs">
@@ -1240,19 +1266,19 @@
     <div class="sb-pane" id="pane-layers">
       <div class="layer-group-title" id="lbl-basemap-group">Harita Altlığı Seçimi</div>
       <div class="basemap-grid">
-        <button class="bm-card active" id="bm-sat" onclick="setBasemap('sat')">
+        <button class="bm-card active" id="bm-street" onclick="setBasemap('street')">
           <div>
-            <span id="lbl-bm-sat">Uydu Görüntüsü (Varsayılan)</span>
-            <small id="sub-bm-sat">Yüksek Çözünürlük Uydu + Yer Adları</small>
-          </div>
-          <span>🛰</span>
-        </button>
-        <button class="bm-card" id="bm-street" onclick="setBasemap('street')">
-          <div>
-            <span id="lbl-bm-street">Sokak ve Ulaşım Haritası</span>
+            <span id="lbl-bm-street">Sokak ve Ulaşım Haritası (Varsayılan)</span>
             <small id="sub-bm-street">Yol Ağı ve Kentsel Yerleşim Planı</small>
           </div>
           <span>🗺</span>
+        </button>
+        <button class="bm-card" id="bm-sat" onclick="setBasemap('sat')">
+          <div>
+            <span id="lbl-bm-sat">Uydu Görüntüsü</span>
+            <small id="sub-bm-sat">Yüksek Çözünürlük Uydu + Yer Adları</small>
+          </div>
+          <span>🛰</span>
         </button>
         <button class="bm-card" id="bm-topo" onclick="setBasemap('topo')">
           <div>
@@ -1381,18 +1407,18 @@ const UI_STRINGS = {
   tr: {
     spBadge: "ULUSAL COĞRAFYA EĞİTİMİ KONGRESİ · EYLÜL 2027 · İZMİR",
     spTitle: "İzmir İnteraktif Arazi Çalışması ve Gezi Haritası",
-    spSub: "Yüksek çözünürlüklü uydu altlığı üzerinde 6 tematik arazi koridoru, 32 doğrulanmış saha durağı ve Türkçe–İngilizce sesli saha rehberi.",
+    spSub: "Sokak ve ulaşım haritası altlığı üzerinde 6 tematik arazi koridoru, 32 doğrulanmış saha durağı ve Türkçe–İngilizce sesli saha rehberi.",
     spEnter: "Haritayı Keşfet →",
     appTitle: "İnteraktif Gezi Rehberi",
     brochureBtn: "A5 Gezi Broşürü (PDF)",
-    articleBtn: "Bilimsel Makale (PDF)",
+    articleBtn: "Bilimsel Saha Envanteri (PDF)",
     tabStops: "Gezi Durakları (32)",
     tabLayers: "Katmanlar & Altlık",
     searchPh: "Durak, ilçe veya tema ara (örn. Efes, Birgi, Jeotermal)...",
     allRoutes: "Tümü (32)",
     bmGroup: "Harita Altlığı Seçimi",
-    bmSat: "Uydu Görüntüsü (Varsayılan)", subBmSat: "Yüksek Çözünürlük Uydu + Yer Adları",
-    bmStreet: "Sokak ve Ulaşım Haritası", subBmStreet: "Yol Ağı ve Kentsel Yerleşim Planı",
+    bmSat: "Uydu Görüntüsü", subBmSat: "Yüksek Çözünürlük Uydu + Yer Adları",
+    bmStreet: "Sokak ve Ulaşım Haritası (Varsayılan)", subBmStreet: "Yol Ağı ve Kentsel Yerleşim Planı",
     bmTopo: "Topoğrafik ve Fiziki Rölyef", subBmTopo: "Eşyükselti Eğrileri ve Kabartma",
     ovGroup: "Gezi ve Coğrafya Katmanları",
     mobileMenu: "☰ Rehber & Katmanlar",
@@ -1421,18 +1447,18 @@ const UI_STRINGS = {
   en: {
     spBadge: "NATIONAL GEOGRAPHY EDUCATION CONGRESS · SEPTEMBER 2027 · İZMİR",
     spTitle: "İzmir Interactive Fieldwork & Excursion Web GIS",
-    spSub: "6 thematic excursion corridors, 32 verified field stops, high-resolution satellite imagery, and bilingual (TR/EN) audio narrations.",
+    spSub: "6 thematic excursion corridors, 32 verified field stops, street & road cartography, and bilingual (TR/EN) audio narrations.",
     spEnter: "Explore Map →",
     appTitle: "Interactive Excursion Guide",
     brochureBtn: "A5 Pocket Brochure (PDF)",
-    articleBtn: "Scientific Article (PDF)",
+    articleBtn: "Scientific Field Inventory (PDF)",
     tabStops: "Excursion Stops (32)",
     tabLayers: "Layers & Basemap",
     searchPh: "Search stop, district or theme (e.g. Ephesus, Birgi)...",
     allRoutes: "All (32)",
     bmGroup: "Map Basemap Selection",
-    bmSat: "Satellite Imagery (Default)", subBmSat: "Esri World Imagery + Place Labels",
-    bmStreet: "Street & Road Map", subBmStreet: "Bright Urban & Highway Cartography",
+    bmSat: "Satellite Imagery", subBmSat: "Esri World Imagery + Place Labels",
+    bmStreet: "Street & Road Map (Default)", subBmStreet: "Bright Urban & Highway Cartography",
     bmTopo: "Topographic Relief", subBmTopo: "Contours & Physical Terrain",
     ovGroup: "Excursion & Geography Layers",
     mobileMenu: "☰ Guide & Layers",
@@ -1463,7 +1489,7 @@ const UI_STRINGS = {
 let state = {
   lang: "tr",
   audioLang: "tr",
-  basemap: "sat",   // Açılışta doğrudan Uydu Görüntüsü!
+  basemap: "street", // Açılışta doğrudan Sokak ve Ulaşım Haritası!
   uiNight: false,   // Sadece çerçeve ve menüleri gece temasına alır; haritayı etkilemez!
   corridorFilter: "ALL",
   selectedCode: null,
@@ -1500,11 +1526,25 @@ const map = L.map("map", {
   zoomControl: false,
   preferCanvas: true
 });
-L.control.zoom({ position: "bottomright" }).addTo(map);
-L.control.scale({ position: "bottomright", imperial: false }).addTo(map);
+if (map.attributionControl) map.attributionControl.setPrefix(false);
+L.control.scale({ position: "bottomleft", imperial: false }).addTo(map);
+
+let routeLayerRefs = [];
+function getRouteWeights() {
+  const z = map.getZoom();
+  if (z < 10) return { outer: 5.0, mid: 3.6, core: 2.3 };
+  if (z < 12) return { outer: 6.2, mid: 4.4, core: 2.9 };
+  return { outer: 7.4, mid: 5.2, core: 3.5 };
+}
 
 function syncZoomClass() {
   document.body.classList.toggle("zoom-low", map.getZoom() < 9.5);
+  const w = getRouteWeights();
+  routeLayerRefs.forEach(r => {
+    r.outerLyr.setStyle({ weight: w.outer });
+    r.midLyr.setStyle({ weight: w.mid });
+    r.coreLyr.setStyle({ weight: w.core });
+  });
 }
 map.on("zoomend", syncZoomClass);
 syncZoomClass();
@@ -1526,8 +1566,8 @@ const BASEMAPS = {
     attribution: "&copy; Esri Topographic", maxZoom: 19
   })
 };
-// Startup default: Satellite Imagery!
-BASEMAPS.sat.addTo(map);
+// Startup default: Street & Road Map (Sokak ve Ulaşım Haritası)!
+BASEMAPS.street.addTo(map);
 
 const lgMask     = L.layerGroup().addTo(map);
 const lgDistrict = L.layerGroup();
@@ -1568,14 +1608,14 @@ function buildProvinceMask() {
   holes.forEach(ring => {
     L.polyline(ring, {
       color: "#0F172A",
-      weight: 5.0,
-      opacity: 0.72,
+      weight: 3.8,
+      opacity: 0.68,
       interactive: false
     }).addTo(lgMask);
     L.polyline(ring, {
       color: isSat ? "#FDE68A" : "#B45309",
-      weight: 2.3,
-      opacity: 0.96,
+      weight: 1.9,
+      opacity: 0.95,
       interactive: false
     }).addTo(lgMask);
   });
@@ -1679,25 +1719,27 @@ function buildRoutesAndStops() {
   lgRoutes.clearLayers();
   lgMain.clearLayers();
   lgSubStops.clearLayers();
+  routeLayerRefs = [];
+  const rw = getRouteWeights();
 
   GIS_DATA.routes.features.forEach(f => {
     const p = f.properties;
     if (state.corridorFilter !== "ALL" && p.corridor_code !== state.corridorFilter) return;
     const meta = CORRIDOR_META[p.corridor_code] || { color: "#FF7A00" };
     const col = meta.color;
-    // Outer dark shadow halo + crisp white inner rim + vivid non-blue route core!
-    L.geoJSON(f, {
-      style: { color: "#090D16", weight: 8.6, opacity: 0.80, lineCap: "round", lineJoin: "round", interactive: false }
+    const outerLyr = L.geoJSON(f, {
+      style: { color: "#090D16", weight: rw.outer, opacity: 0.76, lineCap: "round", lineJoin: "round", interactive: false }
     }).addTo(lgRoutes);
-    L.geoJSON(f, {
-      style: { color: "#FFFFFF", weight: 6.0, opacity: 0.94, lineCap: "round", lineJoin: "round", interactive: false }
+    const midLyr = L.geoJSON(f, {
+      style: { color: "#FFFFFF", weight: rw.mid, opacity: 0.94, lineCap: "round", lineJoin: "round", interactive: false }
     }).addTo(lgRoutes);
-    L.geoJSON(f, {
-      style: { color: col, weight: 4.2, opacity: 1.0, lineCap: "round", lineJoin: "round" }
+    const coreLyr = L.geoJSON(f, {
+      style: { color: col, weight: rw.core, opacity: 1.0, lineCap: "round", lineJoin: "round" }
     }).bindTooltip(
       `<strong>${p.corridor_code}</strong> (${p.from_stop} → ${p.to_stop}) · ${p.distance_km} km`,
       { sticky: true }
     ).addTo(lgRoutes);
+    routeLayerRefs.push({ outerLyr, midLyr, coreLyr });
   });
 
   mainStops.forEach(f => {
