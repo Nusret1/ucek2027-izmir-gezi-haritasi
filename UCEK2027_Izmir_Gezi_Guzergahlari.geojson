@@ -16,7 +16,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K1",
         "to_stop": "K2",
         "distance_km": 0.6,
@@ -100,7 +100,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K2",
         "to_stop": "K3",
         "distance_km": 1.4,
@@ -308,7 +308,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K3",
         "to_stop": "K4",
         "distance_km": 1.4,
@@ -552,7 +552,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K4",
         "to_stop": "K5",
         "distance_km": 3.2,
@@ -872,7 +872,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K5",
         "to_stop": "K6",
         "distance_km": 5.9,
@@ -1192,7 +1192,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K6",
         "to_stop": "K7",
         "distance_km": 10.1,
@@ -1512,7 +1512,7 @@
         "corridor_code": "KOR-1",
         "corridor_name_tr": "Koridor 1: Tarihi Kent Merkezi, Liman Mirası ve Buca–Bornova Ekseni",
         "corridor_name_en": "Corridor 1: Historic Urban Core, Port Heritage & Buca–Bornova Axis",
-        "color": "#00d2ff",
+        "color": "#FF3B30",
         "from_stop": "K7",
         "to_stop": "K8",
         "distance_km": 10.1,
@@ -1832,7 +1832,7 @@
         "corridor_code": "KOR-2",
         "corridor_name_tr": "Koridor 2: Güney UNESCO Kültür Peyzajı (Efes, Ayasuluk, Şirince ve Metropolis)",
         "corridor_name_en": "Corridor 2: Southern UNESCO Cultural Landscape (Ephesus, Ayasuluk, Şirince & Metropolis)",
-        "color": "#f59e0b",
+        "color": "#FFB800",
         "from_stop": "E1",
         "to_stop": "E2",
         "distance_km": 3.7,
@@ -2152,7 +2152,7 @@
         "corridor_code": "KOR-2",
         "corridor_name_tr": "Koridor 2: Güney UNESCO Kültür Peyzajı (Efes, Ayasuluk, Şirince ve Metropolis)",
         "corridor_name_en": "Corridor 2: Southern UNESCO Cultural Landscape (Ephesus, Ayasuluk, Şirince & Metropolis)",
-        "color": "#f59e0b",
+        "color": "#FFB800",
         "from_stop": "E2",
         "to_stop": "E3",
         "distance_km": 9.1,
@@ -2472,7 +2472,7 @@
         "corridor_code": "KOR-2",
         "corridor_name_tr": "Koridor 2: Güney UNESCO Kültür Peyzajı (Efes, Ayasuluk, Şirince ve Metropolis)",
         "corridor_name_en": "Corridor 2: Southern UNESCO Cultural Landscape (Ephesus, Ayasuluk, Şirince & Metropolis)",
-        "color": "#f59e0b",
+        "color": "#FFB800",
         "from_stop": "E3",
         "to_stop": "E4",
         "distance_km": 8.8,
@@ -2792,7 +2792,7 @@
         "corridor_code": "KOR-2",
         "corridor_name_tr": "Koridor 2: Güney UNESCO Kültür Peyzajı (Efes, Ayasuluk, Şirince ve Metropolis)",
         "corridor_name_en": "Corridor 2: Southern UNESCO Cultural Landscape (Ephesus, Ayasuluk, Şirince & Metropolis)",
-        "color": "#f59e0b",
+        "color": "#FFB800",
         "from_stop": "E4",
         "to_stop": "E5",
         "distance_km": 8,
@@ -3112,7 +3112,7 @@
         "corridor_code": "KOR-2",
         "corridor_name_tr": "Koridor 2: Güney UNESCO Kültür Peyzajı (Efes, Ayasuluk, Şirince ve Metropolis)",
         "corridor_name_en": "Corridor 2: Southern UNESCO Cultural Landscape (Ephesus, Ayasuluk, Şirince & Metropolis)",
-        "color": "#f59e0b",
+        "color": "#FFB800",
         "from_stop": "E5",
         "to_stop": "E6",
         "distance_km": 41.9,
@@ -3432,7 +3432,7 @@
         "corridor_code": "KOR-3",
         "corridor_name_tr": "Koridor 3: Kuzey UNESCO Çok Katmanlı Peyzajı (Bergama, Kozak, Dikili ve Foça)",
         "corridor_name_en": "Corridor 3: Northern UNESCO Multi-Layered Landscape (Pergamon, Kozak, Dikili & Foça)",
-        "color": "#a855f7",
+        "color": "#22C55E",
         "from_stop": "B1",
         "to_stop": "B2",
         "distance_km": 6.9,
@@ -3752,7 +3752,7 @@
         "corridor_code": "KOR-3",
         "corridor_name_tr": "Koridor 3: Kuzey UNESCO Çok Katmanlı Peyzajı (Bergama, Kozak, Dikili ve Foça)",
         "corridor_name_en": "Corridor 3: Northern UNESCO Multi-Layered Landscape (Pergamon, Kozak, Dikili & Foça)",
-        "color": "#a855f7",
+        "color": "#22C55E",
         "from_stop": "B2",
         "to_stop": "B3",
         "distance_km": 22.3,
@@ -4072,7 +4072,7 @@
         "corridor_code": "KOR-3",
         "corridor_name_tr": "Koridor 3: Kuzey UNESCO Çok Katmanlı Peyzajı (Bergama, Kozak, Dikili ve Foça)",
         "corridor_name_en": "Corridor 3: Northern UNESCO Multi-Layered Landscape (Pergamon, Kozak, Dikili & Foça)",
-        "color": "#a855f7",
+        "color": "#22C55E",
         "from_stop": "B3",
         "to_stop": "B4",
         "distance_km": 52.3,
@@ -4392,7 +4392,7 @@
         "corridor_code": "KOR-3",
         "corridor_name_tr": "Koridor 3: Kuzey UNESCO Çok Katmanlı Peyzajı (Bergama, Kozak, Dikili ve Foça)",
         "corridor_name_en": "Corridor 3: Northern UNESCO Multi-Layered Landscape (Pergamon, Kozak, Dikili & Foça)",
-        "color": "#a855f7",
+        "color": "#22C55E",
         "from_stop": "B4",
         "to_stop": "B5",
         "distance_km": 76.7,
@@ -4712,7 +4712,7 @@
         "corridor_code": "KOR-4",
         "corridor_name_tr": "Koridor 4: İzmir Yarımadası Jeoturizm, Cittaslow, Bağ Yolu ve Denizel Miras Rotası",
         "corridor_name_en": "Corridor 4: İzmir Peninsula Geotourism, Cittaslow, Vineyard & Maritime Heritage Route",
-        "color": "#10b981",
+        "color": "#FF7A00",
         "from_stop": "Y1",
         "to_stop": "Y2",
         "distance_km": 4.9,
@@ -5032,7 +5032,7 @@
         "corridor_code": "KOR-4",
         "corridor_name_tr": "Koridor 4: İzmir Yarımadası Jeoturizm, Cittaslow, Bağ Yolu ve Denizel Miras Rotası",
         "corridor_name_en": "Corridor 4: İzmir Peninsula Geotourism, Cittaslow, Vineyard & Maritime Heritage Route",
-        "color": "#10b981",
+        "color": "#FF7A00",
         "from_stop": "Y2",
         "to_stop": "Y3",
         "distance_km": 16,
@@ -5352,7 +5352,7 @@
         "corridor_code": "KOR-4",
         "corridor_name_tr": "Koridor 4: İzmir Yarımadası Jeoturizm, Cittaslow, Bağ Yolu ve Denizel Miras Rotası",
         "corridor_name_en": "Corridor 4: İzmir Peninsula Geotourism, Cittaslow, Vineyard & Maritime Heritage Route",
-        "color": "#10b981",
+        "color": "#FF7A00",
         "from_stop": "Y3",
         "to_stop": "Y4",
         "distance_km": 37.1,
@@ -5672,7 +5672,7 @@
         "corridor_code": "KOR-4",
         "corridor_name_tr": "Koridor 4: İzmir Yarımadası Jeoturizm, Cittaslow, Bağ Yolu ve Denizel Miras Rotası",
         "corridor_name_en": "Corridor 4: İzmir Peninsula Geotourism, Cittaslow, Vineyard & Maritime Heritage Route",
-        "color": "#10b981",
+        "color": "#FF7A00",
         "from_stop": "Y4",
         "to_stop": "Y5",
         "distance_km": 78.7,
@@ -5992,7 +5992,7 @@
         "corridor_code": "KOR-4",
         "corridor_name_tr": "Koridor 4: İzmir Yarımadası Jeoturizm, Cittaslow, Bağ Yolu ve Denizel Miras Rotası",
         "corridor_name_en": "Corridor 4: İzmir Peninsula Geotourism, Cittaslow, Vineyard & Maritime Heritage Route",
-        "color": "#10b981",
+        "color": "#FF7A00",
         "from_stop": "Y5",
         "to_stop": "Y6",
         "distance_km": 17.4,
@@ -6312,7 +6312,7 @@
         "corridor_code": "KOR-5",
         "corridor_name_tr": "Koridor 5: Küçük Menderes Havzası (Birgi, Bozdağ–Gölcük, Ödemiş, Tire ve Nazarköy)",
         "corridor_name_en": "Corridor 5: Küçük Menderes Basin (Birgi, Bozdağ–Gölcük, Ödemiş, Tire & Nazarköy)",
-        "color": "#ef4444",
+        "color": "#D946EF",
         "from_stop": "M1",
         "to_stop": "M2",
         "distance_km": 21.4,
@@ -6632,7 +6632,7 @@
         "corridor_code": "KOR-5",
         "corridor_name_tr": "Koridor 5: Küçük Menderes Havzası (Birgi, Bozdağ–Gölcük, Ödemiş, Tire ve Nazarköy)",
         "corridor_name_en": "Corridor 5: Küçük Menderes Basin (Birgi, Bozdağ–Gölcük, Ödemiş, Tire & Nazarköy)",
-        "color": "#ef4444",
+        "color": "#D946EF",
         "from_stop": "M2",
         "to_stop": "M3",
         "distance_km": 20.4,
@@ -6952,7 +6952,7 @@
         "corridor_code": "KOR-5",
         "corridor_name_tr": "Koridor 5: Küçük Menderes Havzası (Birgi, Bozdağ–Gölcük, Ödemiş, Tire ve Nazarköy)",
         "corridor_name_en": "Corridor 5: Küçük Menderes Basin (Birgi, Bozdağ–Gölcük, Ödemiş, Tire & Nazarköy)",
-        "color": "#ef4444",
+        "color": "#D946EF",
         "from_stop": "M3",
         "to_stop": "M4",
         "distance_km": 35.3,
@@ -7272,7 +7272,7 @@
         "corridor_code": "KOR-5",
         "corridor_name_tr": "Koridor 5: Küçük Menderes Havzası (Birgi, Bozdağ–Gölcük, Ödemiş, Tire ve Nazarköy)",
         "corridor_name_en": "Corridor 5: Küçük Menderes Basin (Birgi, Bozdağ–Gölcük, Ödemiş, Tire & Nazarköy)",
-        "color": "#ef4444",
+        "color": "#D946EF",
         "from_stop": "M4",
         "to_stop": "M5",
         "distance_km": 80,
@@ -7592,7 +7592,7 @@
         "corridor_code": "KOR-6",
         "corridor_name_tr": "Koridor 6: İzmir Körfezi Sulak Alan Ekoturizmi ve Jeotermal Sağlık Coğrafyası",
         "corridor_name_en": "Corridor 6: Gulf of İzmir Wetland Ecotourism & Geothermal Health Geography",
-        "color": "#ec4899",
+        "color": "#A3E635",
         "from_stop": "D1",
         "to_stop": "D2",
         "distance_km": 43.5,
@@ -7900,1004 +7900,6 @@
           [
             27.03697,
             38.38857
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "segment_id": 999,
-        "corridor_id": 0,
-        "corridor_code": "IZMIR-SINIR",
-        "corridor_name_tr": "İzmir İl Mülki Sınırı",
-        "corridor_name_en": "İzmir Province Administrative Boundary",
-        "color": "#38bdf8"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              26.1707911,
-              38.2617907
-            ],
-            [
-              26.2007991,
-              38.1913123
-            ],
-            [
-              26.2368263,
-              38.1850203
-            ],
-            [
-              26.2998927,
-              38.1525398
-            ],
-            [
-              26.3482537,
-              38.1478897
-            ],
-            [
-              26.3841836,
-              38.1170017
-            ],
-            [
-              26.4338944,
-              38.1047293
-            ],
-            [
-              26.4582013,
-              38.0738703
-            ],
-            [
-              26.5021545,
-              38.048823
-            ],
-            [
-              26.5725566,
-              38.026169
-            ],
-            [
-              26.6338906,
-              38.0281596
-            ],
-            [
-              26.6867607,
-              38.0563736
-            ],
-            [
-              26.7127487,
-              38.1000875
-            ],
-            [
-              26.7454819,
-              38.0824229
-            ],
-            [
-              26.7574355,
-              38.0242413
-            ],
-            [
-              26.7803645,
-              37.9858594
-            ],
-            [
-              26.833083,
-              37.9515478
-            ],
-            [
-              26.8702448,
-              37.9422941
-            ],
-            [
-              26.911129,
-              37.9452498
-            ],
-            [
-              26.9464123,
-              37.9601688
-            ],
-            [
-              26.9722833,
-              37.9846587
-            ],
-            [
-              27.0202924,
-              37.9471505
-            ],
-            [
-              27.1196375,
-              37.9072457
-            ],
-            [
-              27.1577602,
-              37.9029033
-            ],
-            [
-              27.2678947,
-              37.9237871
-            ],
-            [
-              27.3169015,
-              37.8722099
-            ],
-            [
-              27.3580545,
-              37.8809507
-            ],
-            [
-              27.3718572,
-              37.8708518
-            ],
-            [
-              27.3786807,
-              37.8781223
-            ],
-            [
-              27.3916894,
-              37.8510267
-            ],
-            [
-              27.3743731,
-              37.8377336
-            ],
-            [
-              27.3897385,
-              37.8152305
-            ],
-            [
-              27.4405581,
-              37.8386567
-            ],
-            [
-              27.4379897,
-              37.8657742
-            ],
-            [
-              27.4256515,
-              37.8772585
-            ],
-            [
-              27.4591757,
-              37.8962961
-            ],
-            [
-              27.456023,
-              37.9264864
-            ],
-            [
-              27.5020505,
-              37.9374906
-            ],
-            [
-              27.4947834,
-              37.937718
-            ],
-            [
-              27.4928336,
-              37.9589889
-            ],
-            [
-              27.473191,
-              37.9665139
-            ],
-            [
-              27.4847857,
-              37.9781635
-            ],
-            [
-              27.4987364,
-              37.9769676
-            ],
-            [
-              27.5240417,
-              38.0077742
-            ],
-            [
-              27.6223027,
-              38.0074621
-            ],
-            [
-              27.6226893,
-              37.9722983
-            ],
-            [
-              27.6529822,
-              37.9624801
-            ],
-            [
-              27.6940007,
-              37.9824256
-            ],
-            [
-              27.7332044,
-              37.9812214
-            ],
-            [
-              27.7553487,
-              37.9491681
-            ],
-            [
-              27.7782435,
-              37.9751802
-            ],
-            [
-              27.8135847,
-              37.9627746
-            ],
-            [
-              27.8430734,
-              37.9784123
-            ],
-            [
-              27.8561329,
-              37.9704221
-            ],
-            [
-              27.8767562,
-              37.9909881
-            ],
-            [
-              27.8796,
-              38.0123144
-            ],
-            [
-              27.9062192,
-              38.0149138
-            ],
-            [
-              27.900342,
-              37.9933131
-            ],
-            [
-              27.9658938,
-              37.9994117
-            ],
-            [
-              28.0073733,
-              37.9657834
-            ],
-            [
-              28.0070999,
-              37.9811459
-            ],
-            [
-              28.0182926,
-              37.9820507
-            ],
-            [
-              28.0176129,
-              37.9949818
-            ],
-            [
-              28.0331174,
-              38.0019617
-            ],
-            [
-              28.0515845,
-              38.0389644
-            ],
-            [
-              28.0728788,
-              38.0266692
-            ],
-            [
-              28.102169,
-              38.0312928
-            ],
-            [
-              28.1414192,
-              38.0224544
-            ],
-            [
-              28.1581521,
-              38.0492739
-            ],
-            [
-              28.1894127,
-              38.0371088
-            ],
-            [
-              28.2115498,
-              38.0444983
-            ],
-            [
-              28.279297,
-              38.0332154
-            ],
-            [
-              28.2928689,
-              38.0548346
-            ],
-            [
-              28.3097564,
-              38.0547847
-            ],
-            [
-              28.3011688,
-              38.0779587
-            ],
-            [
-              28.3092254,
-              38.092224
-            ],
-            [
-              28.331786,
-              38.1010159
-            ],
-            [
-              28.3294433,
-              38.1098222
-            ],
-            [
-              28.3311599,
-              38.1133339
-            ],
-            [
-              28.3301246,
-              38.1193945
-            ],
-            [
-              28.3305636,
-              38.1217544
-            ],
-            [
-              28.3316529,
-              38.1222475
-            ],
-            [
-              28.3660293,
-              38.1292952
-            ],
-            [
-              28.3754405,
-              38.1078114
-            ],
-            [
-              28.389911,
-              38.1114843
-            ],
-            [
-              28.4360706,
-              38.0877267
-            ],
-            [
-              28.4684354,
-              38.1041449
-            ],
-            [
-              28.4850677,
-              38.1225949
-            ],
-            [
-              28.4619633,
-              38.1395071
-            ],
-            [
-              28.4636885,
-              38.1559911
-            ],
-            [
-              28.4334192,
-              38.1757605
-            ],
-            [
-              28.486283,
-              38.1968993
-            ],
-            [
-              28.4930754,
-              38.2281612
-            ],
-            [
-              28.4876346,
-              38.2465897
-            ],
-            [
-              28.4657901,
-              38.2593999
-            ],
-            [
-              28.4052216,
-              38.2672501
-            ],
-            [
-              28.3735026,
-              38.2552914
-            ],
-            [
-              28.379488,
-              38.2680221
-            ],
-            [
-              28.356534,
-              38.2980655
-            ],
-            [
-              28.3129178,
-              38.3221936
-            ],
-            [
-              28.2839907,
-              38.311705
-            ],
-            [
-              28.2337785,
-              38.3297624
-            ],
-            [
-              28.2108103,
-              38.313258
-            ],
-            [
-              28.2118656,
-              38.3402993
-            ],
-            [
-              28.1932999,
-              38.3476997
-            ],
-            [
-              28.1890301,
-              38.3688366
-            ],
-            [
-              28.143408,
-              38.3616259
-            ],
-            [
-              28.0830177,
-              38.406907
-            ],
-            [
-              28.0816481,
-              38.3993582
-            ],
-            [
-              28.050631,
-              38.4007367
-            ],
-            [
-              28.0323712,
-              38.3855733
-            ],
-            [
-              28.0212362,
-              38.3921181
-            ],
-            [
-              28.0000534,
-              38.3773683
-            ],
-            [
-              27.9706096,
-              38.3769484
-            ],
-            [
-              27.9235773,
-              38.4035467
-            ],
-            [
-              27.9211006,
-              38.4184153
-            ],
-            [
-              27.9098629,
-              38.4185745
-            ],
-            [
-              27.8664565,
-              38.3816328
-            ],
-            [
-              27.8683877,
-              38.3628166
-            ],
-            [
-              27.8875612,
-              38.3501201
-            ],
-            [
-              27.8883902,
-              38.3396872
-            ],
-            [
-              27.8682869,
-              38.3300832
-            ],
-            [
-              27.8588808,
-              38.3080215
-            ],
-            [
-              27.8343772,
-              38.3138652
-            ],
-            [
-              27.8178696,
-              38.3066878
-            ],
-            [
-              27.7962213,
-              38.3387937
-            ],
-            [
-              27.7613216,
-              38.3367015
-            ],
-            [
-              27.7550348,
-              38.3286978
-            ],
-            [
-              27.7357108,
-              38.3627263
-            ],
-            [
-              27.7091809,
-              38.3654152
-            ],
-            [
-              27.7171044,
-              38.38605
-            ],
-            [
-              27.700128,
-              38.4500841
-            ],
-            [
-              27.6538601,
-              38.4718446
-            ],
-            [
-              27.6189045,
-              38.5048312
-            ],
-            [
-              27.5936192,
-              38.4714404
-            ],
-            [
-              27.5478,
-              38.4536
-            ],
-            [
-              27.5377,
-              38.473
-            ],
-            [
-              27.5138,
-              38.4817
-            ],
-            [
-              27.4511,
-              38.549
-            ],
-            [
-              27.3956,
-              38.5596
-            ],
-            [
-              27.3503754,
-              38.5339925
-            ],
-            [
-              27.3053654,
-              38.5429294
-            ],
-            [
-              27.2903037,
-              38.5580714
-            ],
-            [
-              27.275578,
-              38.5535623
-            ],
-            [
-              27.2429936,
-              38.5757036
-            ],
-            [
-              27.2277551,
-              38.6408477
-            ],
-            [
-              27.2399461,
-              38.6495854
-            ],
-            [
-              27.2287568,
-              38.669992
-            ],
-            [
-              27.2026315,
-              38.6819322
-            ],
-            [
-              27.2021431,
-              38.691284
-            ],
-            [
-              27.2230344,
-              38.690348
-            ],
-            [
-              27.2235417,
-              38.7117683
-            ],
-            [
-              27.2043187,
-              38.7249054
-            ],
-            [
-              27.1811306,
-              38.7226005
-            ],
-            [
-              27.1484506,
-              38.7437914
-            ],
-            [
-              27.1127128,
-              38.8002195
-            ],
-            [
-              27.1845645,
-              38.8211782
-            ],
-            [
-              27.1587235,
-              38.8530729
-            ],
-            [
-              27.1686691,
-              38.8743712
-            ],
-            [
-              27.1885643,
-              38.8803106
-            ],
-            [
-              27.224459,
-              38.8518322
-            ],
-            [
-              27.2352576,
-              38.8686327
-            ],
-            [
-              27.2304303,
-              38.9031854
-            ],
-            [
-              27.2664142,
-              38.9035244
-            ],
-            [
-              27.2734308,
-              38.9221073
-            ],
-            [
-              27.3012936,
-              38.9280919
-            ],
-            [
-              27.3139,
-              38.9265812
-            ],
-            [
-              27.3177489,
-              38.9108001
-            ],
-            [
-              27.3337805,
-              38.9171448
-            ],
-            [
-              27.3462587,
-              38.9512557
-            ],
-            [
-              27.393894,
-              38.9428385
-            ],
-            [
-              27.402247,
-              38.9229339
-            ],
-            [
-              27.4548363,
-              38.9302075
-            ],
-            [
-              27.4720358,
-              38.9497267
-            ],
-            [
-              27.4646278,
-              38.9646924
-            ],
-            [
-              27.4690604,
-              38.9905034
-            ],
-            [
-              27.5309443,
-              39.0324944
-            ],
-            [
-              27.5518656,
-              39.0173248
-            ],
-            [
-              27.5638497,
-              39.0260269
-            ],
-            [
-              27.5392592,
-              39.0453027
-            ],
-            [
-              27.5223613,
-              39.0677553
-            ],
-            [
-              27.5223183,
-              39.0913665
-            ],
-            [
-              27.4950242,
-              39.1162851
-            ],
-            [
-              27.5054364,
-              39.1306077
-            ],
-            [
-              27.4392986,
-              39.1577189
-            ],
-            [
-              27.4381184,
-              39.1666033
-            ],
-            [
-              27.4550915,
-              39.1728749
-            ],
-            [
-              27.4485254,
-              39.1855579
-            ],
-            [
-              27.4795747,
-              39.1998766
-            ],
-            [
-              27.4696273,
-              39.2239688
-            ],
-            [
-              27.480433,
-              39.2680786
-            ],
-            [
-              27.4619472,
-              39.2908837
-            ],
-            [
-              27.4635136,
-              39.3068827
-            ],
-            [
-              27.4078953,
-              39.3287954
-            ],
-            [
-              27.4019283,
-              39.3705534
-            ],
-            [
-              27.3765324,
-              39.3854872
-            ],
-            [
-              27.3534786,
-              39.3753373
-            ],
-            [
-              27.3288345,
-              39.3831327
-            ],
-            [
-              27.2936547,
-              39.3765398
-            ],
-            [
-              27.2739458,
-              39.3561187
-            ],
-            [
-              27.2382402,
-              39.3513402
-            ],
-            [
-              27.2248119,
-              39.3398704
-            ],
-            [
-              27.2176737,
-              39.3680306
-            ],
-            [
-              27.1783263,
-              39.3793937
-            ],
-            [
-              27.1427393,
-              39.3658886
-            ],
-            [
-              27.1058039,
-              39.3652131
-            ],
-            [
-              27.0788312,
-              39.3507926
-            ],
-            [
-              27.0788312,
-              39.3322228
-            ],
-            [
-              27.066493,
-              39.3243388
-            ],
-            [
-              27.0108813,
-              39.3086009
-            ],
-            [
-              27.0164752,
-              39.2923783
-            ],
-            [
-              26.9987164,
-              39.2776526
-            ],
-            [
-              26.9703305,
-              39.2930342
-            ],
-            [
-              26.9315457,
-              39.2916061
-            ],
-            [
-              26.9088982,
-              39.2781421
-            ],
-            [
-              26.9059038,
-              39.2635931
-            ],
-            [
-              26.8978357,
-              39.266816
-            ],
-            [
-              26.8785865,
-              39.2361056
-            ],
-            [
-              26.8307483,
-              39.2340067
-            ],
-            [
-              26.7682459,
-              39.1661476
-            ],
-            [
-              26.6876356,
-              39.1197915
-            ],
-            [
-              26.7343479,
-              39.0931243
-            ],
-            [
-              26.708644,
-              39.0649518
-            ],
-            [
-              26.6972337,
-              39.0085164
-            ],
-            [
-              26.7078548,
-              38.9024171
-            ],
-            [
-              26.7279494,
-              38.8698259
-            ],
-            [
-              26.7787165,
-              38.8316582
-            ],
-            [
-              26.7015487,
-              38.8133015
-            ],
-            [
-              26.6692032,
-              38.796394
-            ],
-            [
-              26.619835,
-              38.7500334
-            ],
-            [
-              26.6075945,
-              38.6986544
-            ],
-            [
-              26.5564637,
-              38.7354284
-            ],
-            [
-              26.42124,
-              38.7583964
-            ],
-            [
-              26.3727368,
-              38.7505235
-            ],
-            [
-              26.2842943,
-              38.7098523
-            ],
-            [
-              26.2576131,
-              38.6654435
-            ],
-            [
-              26.2548182,
-              38.6120556
-            ],
-            [
-              26.3235644,
-              38.5393371
-            ],
-            [
-              26.3434998,
-              38.4924981
-            ],
-            [
-              26.3027068,
-              38.460335
-            ],
-            [
-              26.2302719,
-              38.4360646
-            ],
-            [
-              26.2119777,
-              38.387159
-            ],
-            [
-              26.2206589,
-              38.3456248
-            ],
-            [
-              26.19101,
-              38.3188482
-            ],
-            [
-              26.1707911,
-              38.2617907
-            ]
           ]
         ]
       }
