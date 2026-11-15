@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
 <title>UCEK-9 · İzmir İnteraktif Arazi Çalışması ve Gezi Haritası | DEÜ Coğrafya Eğitimi</title>
 <link rel="icon" type="image/png" href="medya/gorseller/deu_logo.png">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
@@ -2359,11 +2361,76 @@ renderLayerPanelAndLegend();
 resetIzmirView();
 
 if (window.location.protocol.startsWith("http")) {
-  const docVer = "v=20270915";
-  const broEl = document.getElementById("lnk-brochure");
-  const artEl = document.getElementById("lnk-article");
-  if (broEl) broEl.href = "UCEK9_Izmir_Gezi_Rehberi_Brosur.pdf?" + docVer;
-  if (artEl) artEl.href = "UCEK9_Izmir_Bilimsel_Saha_Envanteri.pdf?" + docVer;
+  const hadUpdateParam = window.location.search.indexOf("_u=") !== -1;
+  if (hadUpdateParam && window.history && window.history.replaceState) {
+    const cleanSearch = window.location.search
+      .replace(/([?&])_u=[^&]*(&|$)/, (m, p1, p2) => (p1 === "?" && p2 === "&" ? "?" : p2 ? p1 : ""))
+      .replace(/\?$/, "");
+    window.history.replaceState(null, "", window.location.pathname + cleanSearch + window.location.hash);
+  }
+
+  const bindCachedDocTag = (id, file, key) => {
+    const el = document.getElementById(id);
+    const saved = localStorage.getItem(key) || "20270915";
+    if (el) el.href = file + "?v=" + encodeURIComponent(saved);
+  };
+  bindCachedDocTag("lnk-brochure", "UCEK9_Izmir_Gezi_Rehberi_Brosur.pdf", "ucek9_etag_bro");
+  bindCachedDocTag("lnk-article", "UCEK9_Izmir_Bilimsel_Saha_Envanteri.pdf", "ucek9_etag_art");
+
+  const parseAssetTag = res => {
+    const raw = res.headers.get("etag") || res.headers.get("last-modified") || res.headers.get("content-length") || "";
+    return raw.replace(/^W\//i, "").replace(/[^a-zA-Z0-9._-]/g, "");
+  };
+
+  const syncLiveVersions = async () => {
+    const stamp = Date.now();
+    try {
+      const [htmlRes, broRes, artRes] = await Promise.all([
+        fetch(window.location.pathname + "?_chk=" + stamp, { method: "HEAD", cache: "no-store" }),
+        fetch("UCEK9_Izmir_Gezi_Rehberi_Brosur.pdf?_chk=" + stamp, { method: "HEAD", cache: "no-store" }),
+        fetch("UCEK9_Izmir_Bilimsel_Saha_Envanteri.pdf?_chk=" + stamp, { method: "HEAD", cache: "no-store" })
+      ]);
+
+      if (broRes.ok) {
+        const broTag = parseAssetTag(broRes);
+        if (broTag) {
+          localStorage.setItem("ucek9_etag_bro", broTag);
+          const broEl = document.getElementById("lnk-brochure");
+          if (broEl) broEl.href = "UCEK9_Izmir_Gezi_Rehberi_Brosur.pdf?v=" + encodeURIComponent(broTag);
+        }
+      }
+
+      if (artRes.ok) {
+        const artTag = parseAssetTag(artRes);
+        if (artTag) {
+          localStorage.setItem("ucek9_etag_art", artTag);
+          const artEl = document.getElementById("lnk-article");
+          if (artEl) artEl.href = "UCEK9_Izmir_Bilimsel_Saha_Envanteri.pdf?v=" + encodeURIComponent(artTag);
+        }
+      }
+
+      if (htmlRes.ok) {
+        const liveHtmlTag = parseAssetTag(htmlRes);
+        const prevHtmlTag = localStorage.getItem("ucek9_etag_html");
+        if (liveHtmlTag) {
+          localStorage.setItem("ucek9_etag_html", liveHtmlTag);
+          if (!hadUpdateParam && prevHtmlTag && prevHtmlTag !== liveHtmlTag && sessionStorage.getItem("ucek9_reloaded_tag") !== liveHtmlTag) {
+            sessionStorage.setItem("ucek9_reloaded_tag", liveHtmlTag);
+            const sep = window.location.search ? "&" : "?";
+            window.location.replace(window.location.pathname + window.location.search + sep + "_u=" + encodeURIComponent(liveHtmlTag) + window.location.hash);
+          }
+        }
+      }
+    } catch (err) {}
+  };
+
+  syncLiveVersions();
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") syncLiveVersions();
+  });
+  window.addEventListener("pageshow", e => {
+    if (e.persisted) syncLiveVersions();
+  });
 }
 if (window.innerWidth <= 900) {
   document.getElementById("active-legend").classList.add("collapsed");
