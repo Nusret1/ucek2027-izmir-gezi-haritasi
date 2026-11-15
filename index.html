@@ -2358,6 +2358,13 @@ renderStopsList();
 renderLayerPanelAndLegend();
 resetIzmirView();
 
+if (window.location.protocol.startsWith("http")) {
+  const docVer = "v=20270915";
+  const broEl = document.getElementById("lnk-brochure");
+  const artEl = document.getElementById("lnk-article");
+  if (broEl) broEl.href = "UCEK9_Izmir_Gezi_Rehberi_Brosur.pdf?" + docVer;
+  if (artEl) artEl.href = "UCEK9_Izmir_Bilimsel_Saha_Envanteri.pdf?" + docVer;
+}
 if (window.innerWidth <= 900) {
   document.getElementById("active-legend").classList.add("collapsed");
 }
